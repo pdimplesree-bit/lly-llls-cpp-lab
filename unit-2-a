@@ -1,0 +1,16 @@
+#include <iostream>
+#include <string>
+using namespace std;
+string message = "Global Message";
+// Global variable
+namespace App {
+string message = "App Namespace Message";
+}
+int main() {
+string message = "Local Message";
+// Local variable
+cout << "Local message: " << message << endl;
+cout << "Global message: " << ::message << endl;
+
+cout << "Namespace message: " << App::message << endl;
+return 0;}
