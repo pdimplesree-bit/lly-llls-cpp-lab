@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+void incrementByValue(int x) {
+cout << "Value inside function (before increment): " << x <<
+endl;
+x += 5;
+cout << "Value inside function (after increment): " << x << endl;
+}
+void incrementByReference(int &x) {
+cout << "Value inside function (before increment): " << x <<
+endl;
+x += 5;
+cout << "Value inside function (after increment): " << x << endl;
+}
+int main() {
+int my_number = 20;
+cout << "Original value: " << my_number << endl;
+incrementByValue(my_number);
+cout << "Value after Call by Value: " << my_number << endl << endl;
+cout << "Original value: " << my_number << endl;
+incrementByReference(my_number);
+cout << "Value after Call by Reference: " << my_number << endl;
+return 0}
