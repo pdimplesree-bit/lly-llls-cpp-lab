@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+// Inline function to multiply two numbers
+inline int multiply(int a, int b) {
+return a * b;
+}
+inline int min(int a, int b) {
+return (a < b) ?
+a : b;
+}
+int main() {
+int num1 = 15, num2 = 8;
+cout << "The product of " << num1 << " and " << num2 << " is: " <<
+multiply(num1, num2) << endl;
+cout << "The smaller of the two numbers is: " << min(num1, num2) <<
+endl;
+Date:15/07/25 Roll No.: 2 4 B 1 1 A I 1 0 7
+Programming with C++ Lab Page No.: 9
+return 0;
+}
