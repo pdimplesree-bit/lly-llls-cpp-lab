@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+struct Car {
+Date:22/07/25 Roll No.: 2 4 B 1 1 A I 1 0 7
+Programming with C++ Lab Page No.: 15
+private:
+int horsePower;
+public:
+string model;
+void setHorsePower(int hp) {
+if (hp > 0) {
+horsePower = hp;
+} else {
+cout << "Invalid horsepower value."
+<< endl;
+}
+}
+int getHorsePower() {
+return horsePower;
+}
+};
+int main() {
+Car myCar;
+myCar.model = "Toyota Camry";
+// Direct access to public member
+myCar.setHorsePower(203);
+// Accessing private member through a public method
+cout << "Car Model: " << myCar.model << endl;
+cout << "Horsepower: " << myCar.getHorsePower() << endl;
+return 0;
+}
