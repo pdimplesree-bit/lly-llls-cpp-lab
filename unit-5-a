@@ -1,0 +1,31 @@
+class ClassName {
+public:
+// Constructor
+ClassName() {
+// Initialization code
+}
+// Destructor
+~ClassName() {
+
+// Cleanup code
+}
+};
+Program:
+#include <iostream>
+using namespace std;
+class MyClass {
+public:
+// Constructor
+MyClass() {
+cout << "Constructor: Object is created." << endl;
+}
+// Destructor
+~MyClass() {
+cout << "Destructor: Object is destroyed." << endl;
+}};
+int main()
+{
+MyClass obj; // Constructor is called here
+cout << "Inside main function." << endl;
+return 0;
+}
