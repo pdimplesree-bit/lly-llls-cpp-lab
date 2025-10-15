@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+// Function to calculate the sum of three integers
+int sum(int a, int b, int c) {
+return a + b + c;
+}
+// Function to add a double and an integer
+double sum(double a, int b) {
+return a + b;
+}
+// Function to find the product of two integers
+int sum(int a, int b) {
+return a * b;
+}
+int main() {
+cout << "Sum of three integers (1, 2, 3): " << sum(1, 2, 3) <<
+endl;
+cout << "Sum of a double and an integer (4.5, 5): " << sum(4.5, 5)
+<< endl;
+cout << "Product of two integers (6, 7): " << sum(6, 7) << endl;
+return 0;
+}
